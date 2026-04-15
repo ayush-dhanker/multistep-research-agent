@@ -2,7 +2,7 @@ from langchain_groq import ChatGroq
 from state import ResearchState
 import ast
 
-llm = ChatGroq(model="llama-3.3-70b-versatile, temperature=0")
+llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
 
 
 def planner_node(state: ResearchState) -> dict:
