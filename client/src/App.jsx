@@ -18,9 +18,13 @@ export default function App() {
     setError(null)
 
     try {
-      const response = await axios.post("http://localhost:8000/research", {
-        topic
-      })
+      // const response = await axios.post("http://localhost:8000/research", {
+      //   topic
+      // })
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/research`,
+        { topic }
+      )
       setResult(response.data)
     } catch (err) {
       setError("Something went wrong. Make sure the backend is running.")
