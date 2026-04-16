@@ -15,7 +15,6 @@ result = agent.invoke({
     "iteration_count": 0
 })
 
-print(f"Steps: {result['steps']}")
-print(f"\nFetched {len(result['results'])} results")
-for i, r in enumerate(result['results']):
-    print(f"\n--- Result {i+1} ---\n{r[:200]}...")
+print(f"Score: {result['quality_score']}")
+print(f"Iterations: {result['iteration_count']}")
+print(f"\nOutput:\n{result['output']}")
