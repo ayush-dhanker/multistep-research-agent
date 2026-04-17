@@ -13,6 +13,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",   # local dev
         "http://localhost:3000",   # docker
+        "https://multistep-research-agent-renn5arg7-ayushdhankers-projects.vercel.app/"
+        "https://multistep-research-agent.vercel.app/"
     ],
     allow_methods=["*"],
     allow_headers=["*"],
